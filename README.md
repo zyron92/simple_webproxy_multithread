@@ -26,7 +26,7 @@ csapp module (csapp.c & csapp.h) is borrowed from the [page](http://csapp.cs.cmu
     2. Connection which produces an error of "Page not found" will be considered as successful connection as the whole process succeeded but returns an error "page not found" to the client which is still a page.
 
 2. Conception of proxy server:
-  1. Proxy server will run continuosly until a control-c detected.
+	1. Proxy server will run continuosly until a control-c detected.
 	2. In the main thread, it accepts initial "connect" requests from different clients 
 	   in a multiplexing I/O manner and adds them to the read set.
 	3. After checking the added and ready to be read clients in the main thread, 
